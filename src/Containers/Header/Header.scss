@@ -1,0 +1,73 @@
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-color);
+
+  .header__content {
+    width: 60%;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+
+    h1 {
+      position: relative;
+      font-size: 2.5rem;
+      font-weight: 400;
+
+      .text__bold {
+        font-weight: 800;
+      }
+
+      .text__underline {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -23px;
+          left: -30px;
+          width: 100%;
+          height: 1.4rem;
+          background-image: url("../../assets/vector-underline.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+        }
+      }
+    }
+
+    p {
+      padding-top: 2rem;
+    }
+  }
+
+  .header__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+
+    span {
+      width: 80%;
+      background-color: var(--primary-color);
+      height: 0.5rem;
+      border-radius: 20px;
+    }
+
+    button {
+      background: var(--primary-color);
+      width: 7rem;
+      height: 3rem;
+      border-radius: 1rem;
+      color: var(--secondary-color);
+      cursor: pointer;
+    }
+  }
+}

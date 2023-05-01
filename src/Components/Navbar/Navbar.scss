@@ -1,0 +1,40 @@
+.navbar__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .navbar__logo h1 {
+    padding-left: 1rem;
+    font-weight: 400;
+  }
+
+  .navbar__list ul {
+    display: flex;
+    align-items: center;
+
+    li a {
+      font-size: 1.1rem;
+      padding: 0 1.5rem;
+      color: var(--secondary-color);
+    }
+  }
+
+  .navbar__switch-theme {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--secondary-color);
+    border-bottom-left-radius: 50%;
+    cursor: pointer;
+
+    .icon__moon {
+      width: 2rem;
+      height: 2rem;
+      color: var(--primary-color);
+    }
+  }
+}
