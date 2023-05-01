@@ -16,7 +16,9 @@ const CurrentProject = () => {
           <h2>Saif G. - Portfolio</h2>
         </div>
         <div className="project__preview">
-          <TiArrowRightOutline className="preview__icon" />
+          <a href="https://saifgehlot.netlify.app/">
+            <TiArrowRightOutline className="preview__icon" />
+          </a>
         </div>
       </div>
     </div>
